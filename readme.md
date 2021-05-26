@@ -1,1 +1,1 @@
-## blog written using nodejs microservices
+## blog app using nodejs microservices
