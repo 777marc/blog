@@ -5,5 +5,5 @@ metadata:
 spec:
   containers:
     - name: posts
-      image: blog/posts:latest
+      image: blog/posts
       imagePullPolicy: Never
