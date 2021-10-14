@@ -12,13 +12,13 @@ app.post('/events', (req, res) => {
     const event = req.body;
 
     // posts
-    axios.post('http://localhost:4000/events', event);
+    axios.post('http://posts-clusterip-svr:4000/events', event);
     //comments
-    axios.post('http://localhost:4001/events', event);
-    // query
-    axios.post('http://localhost:4002/events', event);
-    // moderation
-    axios.post('http://localhost:4003/events', event);
+    // axios.post('http://localhost:4001/events', event);
+    // // query
+    // axios.post('http://localhost:4002/events', event);
+    // // moderation
+    // axios.post('http://localhost:4003/events', event);
 
     res.send({ status: 'OK' });
 
