@@ -16,6 +16,9 @@ app.get('/posts', (req, res) => {
 });
 
 app.post('/posts', async (req, res) => {
+
+    console.log('in post');
+
     const id = randomBytes(4).toString('hex');
     const { title } = req.body;
 
@@ -39,5 +42,5 @@ app.post('/events', (req, res) => {
 });
 
 app.listen(4000, () => {
-    console.log('listening on port 4000 v5.1');
+    console.log('listening on port 4000:latest');
 }); 
