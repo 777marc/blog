@@ -14,16 +14,16 @@ app.post('/events', (req, res) => {
     // posts
     axios.post('http://posts-clusterip-svr:4000/events', event);
     //comments
-    axios.post('http://comments-clusterip-svr:4001/events', event);
+    //axios.post('http://comments-clusterip-svr:4001/events', event);
     // query
     axios.post('http://query-clusterip-svr:4002/events', event);
     // moderation
-    axios.post('http://moderation-clusterip-svr:4003/events', event);
+    //axios.post('http://moderation-clusterip-svr:4003/events', event);
 
     res.send({ status: 'OK' });
 
 });
 
 app.listen(4005, () => {
-    console.log('listening on port 4005');
+    console.log('listening on port 4005 v2');
 }); 
